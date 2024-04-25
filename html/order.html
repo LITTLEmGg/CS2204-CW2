@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/order.css">
+        <script src="javascript/order.js"></script>
+        <title>Order Page</title>
+    </head>
+
+    <body>
+        <div class="block-header">
+            <h1 class="highlight1"><img src="image/logo.png" alt="Hong Kong DisneyLand logo"/> DisneyLand </h1>
+        </div>
+
+        <div class="block-welcome">
+            <p>Welcome</p> <br><br>
+        </div>
+
+        <h4>Menu</h4>
+        <div class="block-menu">
+            <div class="menu-item-tickets">Tickets</div>
+            <div class="menu-item-dinings">Dinings</div>
+            <div class="menu-item-hotels">Hotels</div>
+
+            <div class="sub-menu-hotels">
+                <div class="sub-menu-item">
+                    <img src="image/hotel-1.jpeg" alt="Standard Room image"/><br>
+                    <label for="standard room">Standard Room</label>
+                    <input type="number" id="s1-qty" min="0" max="10">
+                    <button class="add-btn" id="s1">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/hotel-2.jpeg" alt="Deluxe Room image"/><br>
+                    <label for="deluxe room">Deluxe Room</label>
+                    <input type="number" id="s2-qty" min="0" max="10">
+                    <button class="add-btn" id="s2">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/hotel-3.jpeg" alt="Sea View Room image"/><br>
+                    <label for="sea view room">Sea View Room</label>
+                    <input type="number" id="s3-qty" min="0" max="10">
+                    <button class="add-btn" id="s3">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/hotel-4.jpeg" alt="Kingdom Club Room image"/><br>
+                    <label for="kingdom club room">Kingdom Club Room</label>
+                    <input type="number" id="s4-qty" min="0" max="10">
+                    <button class="add-btn" id="s4">Add</button><br><br>
+                </div>
+            </div>
+
+            <div class="sub-menu-dinings">
+                <div class="sub-menu-item">
+                    <img src="image/dining-1.jpeg" alt="Explorer's Semi Buffet image"/><br>
+                    <label for="explorer's semi buffet">Explorer's Semi Buffet</label>
+                    <input type="number" id="s5-qty" min="0" max="10">
+                    <button class="add-btn" id="s5">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/dining-2.jpeg" alt="Explorer's Semi Buffet image"/><br>
+                    <label for="3-in-1 park meal voucher">3-in-1 Park Meal Voucher</label>
+                    <input type="number" id="s6-qty" min="0" max="10">
+                    <button class="add-btn" id="s6">Add</button><br><br>
+                </div>
+            </div>
+
+            <div class="sub-menu-tickets">
+                <div class="sub-menu-item">
+                    <img src="image/ticket-1.jpeg" alt="1-Day Ticket image">
+                    <label for="1-day ticket">1-Day Ticket</label>
+                    <input type="number" id="s7-qty" min="0" max="10">
+                    <button class="add-btn" id="s7">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/ticket-2.jpeg" alt="1-DayTicket (Child) image">
+                    <label for="1-day ticket child">1-Day Ticket (Child)</label>
+                    <input type="number" id="s8-qty" min="0" max="10">
+                    <button class="add-btn" id="s8">Add</button><br><br>
+                </div>
+                <div class="sub-menu-item">
+                    <img src="image/ticket-3.jpeg" alt="2-Day Ticket image">
+                    <label for="2-day ticket">2-Day Ticket</label>
+                    <input type="number" id="s9-qty" min="0" max="10">
+                    <button class="add-btn" id="s9">Add</button><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-orderitems">
+            <h2 class="center">Ordered Items</h2>
+            <h3 class="center">23 Apr 2024 23:30</h3>
+            <p class="center">Table:4 No. of Guests:3</p>
+            <table id="ordered-items">
+              <thead>
+                <tr>
+                  <th colspan="2" class="description">Description</th>
+                  <th class="quantity">Qty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Existing rows for ordered items -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2" class="description">Total</td>
+                  <td class="quantity">0</td>
+                </tr>
+              </tfoot>
+            </table>
+            <a href="#" id="undo-link"><p class="center">undo</p></a>
+          </div>
+
+        <footer>
+            <p>@CityU 2024 - sources of images and text from official website of Hong Kong Disneyland,
+                Wikipedia and Courtesy of Icon pack by Icons8 - designed by <a href="file:///C:/Users/Mingw/OneDrive/%E6%96%87%E4%BB%B6/CS2204%20ASM1/html/design.html">Cheung Ming Wai</a></p>
+        </footer>
+    </body>
+</html>

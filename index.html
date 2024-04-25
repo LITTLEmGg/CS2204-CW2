@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <script src="javascript/homepage.js"></script>
+        <script src="https://personal.cs.cityu.edu.hk/~cs2204/cs2204cw3.js"></script>
+        <title>Hong Kong DisneyLand</title>
+    </head>
+
+    <body>
+        <div class="block-header">
+            <h1 class="highlight1"><img src="image/logo.png"alt="Hong Kong DisneyLand logo"/>
+        　DisneyLand　</h1>
+    </div>
+
+    <div class="block-welcome">
+        <p>Welcome</p> <br><br>
+    </div>
+
+    <div class="block-navigation">
+        <p><span>Address</span></p>
+        <p>Hong Kong Disneyland Resort,</p>
+            <p>Penny's Bay, Lantau Island,</p>
+            <p>Hong Kong</p><br>
+
+        <p><span>Tel</span></p>
+        <p>+852 1-830-830</p><br>
+
+        <p><span>Business Hours</span></p>
+        <p>10:30 AM to 8:30 PM</p><br>
+
+        <p><span>Brief Introduction</span></p>
+        <p>Enter a magical kingdom inspired by fairy-tale dreams and explore 7 lands <br>
+             - Adventureland, Grizzly Gulch, Mystic Point, Toy Story Land, Fantasyland, <br>
+             Tomorrowland and Main Street, USA - filled with beauty, excitement and Disney Character.</p><br>
+
+        <p><span>Location</span></p>
+        <img src="image/location.jpg"alt="Map" id="enlarge"/> <br>
+        <a href="file:///C:/Users/Mingw/OneDrive/%E6%96%87%E4%BB%B6/CS2204%20ASM1/html/order.html">
+            <img src="image/button.jpg" alt="Book Tickets"/></a>
+        </div>
+
+        <div class="block-content">
+        <div class="highlight2" id="promotion-info"></div>
+        <div class="block-video">
+        <video id="video-player" controls autoplay>
+            <source id="video-source" src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
+        </video>          
+    </div>
+
+
+    <div class="block-order">
+        <form method="get" action="order.html">
+          <fieldset>
+            <legend>Booking information</legend>
+            <br>
+            <div class="spacing1">
+              <label for="date">Date:</label><br>
+              <label for="time">Time:</label><br>
+              <label for="no-of-guests">No. of Visitors:</label>
+            </div>
+      
+            <div class="spacing2">
+              <input type="date" id="date" name="date" value=""><br>
+              <select id="time">
+                <option value="">Select a time slot</option>
+                <option value="10:30 AM - 12:30 PM">10:30 AM - 12:30 PM</option>
+                <option value="12:30 PM - 2:30 PM">12:30 PM - 2:30 PM</option>
+                <option value="2:30 PM - 4:30 PM">2:30 PM - 4:30 PM</option>
+                <option value="4:30 PM - 6:30 PM">4:30 PM - 6:30 PM</option>
+                <option value="6:30 PM - 8:30 PM">6:30 PM - 8:30 PM</option>
+              </select><br>
+              <input type="number" id="no-of-guests" name="nov"><br><br>
+            </div>
+            
+            <div class="button-border">
+              <a href="#"><button id="check-availability" type="button">Check Availability</button></a>
+              <button id="reset" type="reset">Reset</button>
+            </div>
+      
+            <div id="warning" class="error-message">Data not completed, please re-enter</div>
+          </fieldset>
+        </form>
+      </div>
+
+    <div class="block-footer">
+        <footer>
+            <p>@CityU 2024 - sources of images and text from official website of Hong Kong Disneyland,
+            Wikipedia and Courtesy of Icon pack by Icons8 - designed by <a href="file:///C:/Users/Mingw/OneDrive/%E6%96%87%E4%BB%B6/CS2204%20ASM1/html/design.html">Cheung Ming Wai</a></p>
+        </footer>
+    </div>
+    
+    </body>
+</html>
